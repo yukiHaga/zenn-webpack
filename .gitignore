@@ -20,3 +20,6 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+
+# node_modulesはgitで管理しない
+node_modules

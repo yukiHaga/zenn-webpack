@@ -1,0 +1,5 @@
+{
+  // Babelで使いたいプリセットを指定する
+  // JSX -> JS 変換用のプリセットを追加した
+  "presets": ["@babel/preset-env", "@babel/preset-react"]
+}
