@@ -3,6 +3,10 @@ const config = {
   mode: "production",
   // 以下のオプションを指定することで、ブラウザのSources タブから変換前後のコードを見れる
   devtool: "source-map",
+  // デフォルトでは devServer はホストのルートディレクトリ / を起点として起動する
+  // そのため、サーブすべきディレクトリを webpack.config.js 内で指定してあげる必要があります。
+  // ここでは index.html を置いているプロジェクト直下の ./dist を指定します。
+  // Webpack Dev Serverは / へのリクエストに対しては index.html ファイルをおそらく返す
   devServer: {
     static: {
       directory: "./dist",
